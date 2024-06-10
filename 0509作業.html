@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <style>
+        img{width: 30%; cursor: zoom-in;}
+        .enlarged-image {position: fixed;top: 0;left: 0;right: 0; bottom: 0; width: 100vw !important; height: 100vh !important; z-index: 
+        9999; object-fit: contain; margin:auto; Transition: 0.3s; cursor: zoom-out !important;}
+        </style>
+</head>
+<body>
+    <img class="thumbnail" src="C_1 - Photo.jpg" 
+    onclick="toggleEnlarge(this)" >
+    <img class="thumbnail" src="C_4 - Photo.jpg"
+    onclick="toggleEnlarge(this)">
+    <img class="thumbnail" src="D_10 - Photo.jpg"
+    onclick="toggleEnlarge(this)"> 
+    
+</body>
+<script>
+    function toggleEnlarge(imageElement) {imageElement.classList.toggle("enlarged-image"); }
+    </script>
